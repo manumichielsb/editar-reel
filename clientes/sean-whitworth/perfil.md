@@ -49,3 +49,14 @@ Perfil de marca para `/editar-reel`. Solo branding y reglas de edición: **nunca
   legitimation, prenuptial, contempt of court, protective order, flat fee, Michelle Cassell`.
 - **Nunca** agregar información legal, afirmaciones ni promesas que Sean no dijo. Los textos en pantalla salen
   de sus palabras. No tocar su cara ni su voz, ni cambiar el sentido de lo que dice.
+
+## Notas técnicas (aprendidas en el primer reel)
+- Destacados de dos palabras: en `captions.json` la primera palabra termina en espacio duro (`"HIDING "`); si no,
+  la píldora las pega ("CREDITCARDS") cuando entran en una línea. `emphSize` 120 (en 96-104 la píldora puede salirse).
+- Escenas a pantalla completa: subtítulos de esos segundos en `"y": 1400` para que no pisen el contenido; textos de
+  `scene` en blanco (el azul marino no se lee sobre el fondo oscuro), sin `*resaltado*`.
+- Grabaciones de Sean: plano abierto en su escritorio, cabeza en el tercio superior izquierdo. Encuadres que
+  funcionan: zoom 1.2 (cx 0.42, cy 0.45) y 1.5 (cx 0.40, cy 0.40). Iconos `anim` a la derecha, `style: badge`.
+- Videos largos de Drive: bajarlos con
+  `curl -L "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"` (el conector no
+  sirve para archivos de cientos de MB). Requiere que el archivo esté compartido por link.
