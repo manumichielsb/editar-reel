@@ -8,3 +8,12 @@ __pycache__/
 assets/vendor/
 .pexels_key
 .pixabay_key
+
+# Videos de clientes: nunca al repo
+clientes/**/*.mp4
+clientes/**/*.mov
+clientes/**/*.m4v
+clientes/**/*.wav
+clientes/**/*.mp3
+clientes/**/clips/
+clientes/**/renders/
