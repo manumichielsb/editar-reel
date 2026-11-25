@@ -50,6 +50,15 @@ Perfil de marca para `/editar-reel`. Solo branding y reglas de edición: **nunca
 - **Nunca** agregar información legal, afirmaciones ni promesas que Sean no dijo. Los textos en pantalla salen
   de sus palabras. No tocar su cara ni su voz, ni cambiar el sentido de lo que dice.
 
+## Frases clave: cita arriba de la cabeza, nunca pantalla negra
+- **No usar escenas `text` con fondo oscuro** (no le gustan: se ven vacías y duplican el subtítulo).
+- Para remarcar una frase de Sean: sus palabras salen como cita arriba de la cabeza, Sean sigue en cámara.
+  Un `title` por renglón con `"quote": true`, `size` 76, `y` 236 + 112 por renglón, mismo `end` para todos (0.35 s
+  después de la última palabra), `sfx` null, cada renglón entra cuando lo dice. Sacar de `captions.json` los
+  subtítulos de esos segundos (no duplicar). Después de cada `build.py` correr
+  `python3 clientes/herramientas/quote_font.py <proyecto>` (las pone en Montserrat ExtraBold blanca con sombra);
+  sin ese paso salen en DM Serif.
+
 ## Notas técnicas (aprendidas en el primer reel)
 - Destacados de dos palabras: en `captions.json` la primera palabra termina en espacio duro (`"HIDING "`); si no,
   la píldora las pega ("CREDITCARDS") cuando entran en una línea. `emphSize` 120 (en 96-104 la píldora puede salirse).
