@@ -1,0 +1,27 @@
+{
+  "_nota": "Bloque base para reel.json de este cliente. Copiar estas claves al reel.json de cada proyecto.",
+  "captions": {
+    "font": "montserrat-b",
+    "emphFont": "montserrat",
+    "color": "#FFFFFF",
+    "emphColor": "#00287F",
+    "emphBox": "pill",
+    "case": "asis",
+    "emphCase": "upper",
+    "emphItalic": false,
+    "shadow": "soft",
+    "anim": "soft",
+    "emphSfx": null,
+    "size": 82,
+    "emphSize": 120,
+    "y": 1240,
+    "curve": 0,
+    "tilt": 0,
+    "sparkles": false,
+    "emphStickers": null
+  },
+  "titleFont": "dmserif",
+  "autoZoom": true,
+  "grade": null,
+  "sfx": {"gain": 0.35}
+}
