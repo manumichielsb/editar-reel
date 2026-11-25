@@ -34,8 +34,10 @@ Perfil de marca para `/editar-reel`. Solo branding y reglas de edición: **nunca
   en un corte a pantalla completa).
 - B-roll de stock sobrio (oficinas, documentos, familias, tribunales genéricos), sin logos ni caras reconocibles
   de terceros. Escenas `stat`/`text`/`checklist` con acento `#00287F`.
-- Cierre: tarjeta `profile` o el logo blanco centrado sobre el video oscurecido. Seguidores/publicaciones solo si
-  la persona los da.
+- Cierre: **opcional, nunca automático**. Solo se agrega si la persona lo pide para ese reel. Si lo pide:
+  minimalista y profesional, el logo blanco (`assets/logo-white.png`) centrado sobre el video oscurecido, o la tarjeta
+  `profile` con nombre y usuario. **Nunca** seguidores, publicaciones ni seguidos (no pasar `followers`, `posts`
+  ni `following`), sin sonidos de "Seguir" (`sfx: null`).
 - Entrega: MP4 1080x1920 (la copia `-celu.mp4` de `check.py`); el 4K queda disponible si se pide.
 
 ## Idioma y contenido
